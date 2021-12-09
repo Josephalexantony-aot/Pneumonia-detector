@@ -1,0 +1,196 @@
+
+{% extends 'baseresult.html'%}
+{% load static%}
+{% block content%}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color:black">
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1 style="color:white">Pnuemonia Detected!!!</h1>
+
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+
+  <h4 style="color:white"><i>Smilar Images</i></h4>
+  <div class="column">
+  <div class="content">
+    <img src="{% static 'images/1a1c.jpg' %}" alt="Lights" style="width:100%">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="{% static 'images/1a1c.jpg' %}" alt="Lights" style="width:100%">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="{% static 'images/1a1c.jpg' %}" alt="Nature" style="width:100%">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+     <div class="content">
+    <img src="{% static 'images/1a1c.jpg' %}" alt="Nature" style="width:100%">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+
+   
+   
+  
+   <h3>Symptoms</h3>
+  <p> Pneumonia symptoms can vary from so mild you barely notice them, to so severe that hospitalization is required. How your body responds to pneumonia depends on the type germ causing the infection, your age and your overall health.
+
+    The signs and symptoms of pneumonia may include:
+    
+    Cough, which may produce greenish, yellow or even bloody mucus
+    Fever, sweating and shaking chills
+    Shortness of breath
+    Rapid, shallow breathing
+    Sharp or stabbing chest pain that gets worse when you breathe deeply or cough
+    Loss of appetite, low energy, and fatigue
+    Nausea and vomiting, especially in small children
+    Confusion, especially in older people</p>
+
+
+    <h3>Treatment Methods</h3>
+  <p> Mild pneumonia can usually be treated at home with rest, antibiotics (if it's likely be caused by a bacterial infection) and by drinking plenty of fluids. More severe cases may need hospital treatment.
+
+    Unless a healthcare professional tells you otherwise, you should always finish taking a prescribed course of antibiotics, even if you feel better.
+    
+    If you stop taking an antibiotic part way through a course, the bacteria can become resistant to the antibiotic.
+    
+    After starting treatment, your symptoms should steadily improve.
+    
+    However, how quickly they improve will depend on how severe your pneumonia is. 
+    
+    As a general guide, after:
+    
+    1 week – high temperature should have gone
+    4 weeks – chest pain and mucus production should have substantially reduced
+    6 weeks – cough and breathlessness should have substantially reduced
+    3 months – most symptoms should have resolved, but you may still feel very tired (fatigue)
+    6 months – most people will feel back to normal
+    Treatment at home
+    Contact your GP or 111 online if your symptoms do not improve within 3 days of starting antibiotics.
+    
+    Symptoms may not improve if:
+    
+    the bacteria causing the infection is resistant to antibiotics – a GP may prescribe a different antibiotic, or they may prescribe a second antibiotic for you to take with the first one
+    a virus is causing the infection, rather than bacteria – antibiotics have no effect on viruses, and your body's immune system will have to fight the viral infection by creating antibodies
+    Painkillers, such as paracetamol or ibuprofen, may help relieve pain and reduce fever.
+    
+    However, you should not take ibuprofen if you:
+    
+    are allergic to aspirin or other non-steroidal anti-inflammatory drugs (NSAIDs)
+    have asthma, kidney disease, a history of stomach ulcers or indigestion
+    Cough medicines are not recommended as there is little evidence they are effective. A warm honey and lemon drink can help relieve discomfort caused by coughing.
+    
+    Your cough may persist for 2 to 3 weeks after you finish your course of antibiotics, and you may feel tired for even longer as your body continues to recover.
+    
+    Drink plenty of fluids to avoid dehydration, and get plenty of rest to help your body recover.
+    
+    If you smoke, it's more important than ever to stop, as smoking damages your lungs.
+    
+    Read more about stop smoking treatments and how to stop smoking.
+    
+    Contact a GP or 111 online if, after following these self-help measures, you're feeling worse or you're not feeling any better.
+    </p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+
+{% endblock %}

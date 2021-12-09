@@ -1,0 +1,20 @@
+
+
+{% extends 'basedoctorhome.html'%}
+{%block content%}
+{%load static%}
+
+
+    <!-- Main CSS-->
+<!--content here-->
+    {% for obj in XrayUpload %}
+            <div class="col-md-4">
+                    {{ obj.result }}
+                     {{ obj.image_date }}
+
+                     <img src="{{ obj.xray_image.url }}" class="img-responsive" style="width: 99%; float: left; margin-bottom:10px;" />
+            </div>
+    {% endfor %}
+
+{% endblock %}
+
